@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/adminPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Внеси го пасвордот"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/adminLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Најави се!"
+        android:layout_below="@id/adminPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/addMenuItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Додај ставка во менито!"
+        android:layout_below="@id/adminLoginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/menuItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Име на ставка од менито"
+        android:layout_below="@id/addMenuItemButton"
+        android:layout_marginTop="30dp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/menuItemPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Цена"
+        android:layout_below="@id/menuItemName"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/saveMenuItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Зачувај ставка!"
+        android:layout_below="@id/menuItemPrice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

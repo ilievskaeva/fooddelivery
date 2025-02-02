@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добредојде во нашиот систем за достава на храна!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/material_dynamic_neutral40"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Дали си администратор или не?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/material_dynamic_neutral40"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/adminButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Администратор"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/userButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Корисник"
+        android:backgroundTint="@color/cardview_shadow_start_color"
+        android:layout_below="@id/adminButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
